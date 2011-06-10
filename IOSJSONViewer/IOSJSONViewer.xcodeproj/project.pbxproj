@@ -18,6 +18,8 @@
 		D8D039C513A2A9E30026D4D5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D039C413A2A9E30026D4D5 /* DetailViewController.m */; };
 		D8D039C813A2A9E40026D4D5 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D039C613A2A9E40026D4D5 /* RootViewController.xib */; };
 		D8D039CB13A2A9E40026D4D5 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D039C913A2A9E40026D4D5 /* DetailViewController.xib */; };
+		D8D039DF13A2B7A90026D4D5 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D039DC13A2B7A80026D4D5 /* JSONKit.m */; };
+		D8D039E013A2B7A90026D4D5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D039DE13A2B7A90026D4D5 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		D8D039C413A2A9E30026D4D5 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D8D039C713A2A9E40026D4D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		D8D039CA13A2A9E40026D4D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		D8D039DB13A2B7A80026D4D5 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		D8D039DC13A2B7A80026D4D5 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		D8D039DD13A2B7A90026D4D5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D8D039DE13A2B7A90026D4D5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 		D8D039B313A2A9E30026D4D5 /* IOSJSONViewer */ = {
 			isa = PBXGroup;
 			children = (
+				D8D039DB13A2B7A80026D4D5 /* JSONKit.h */,
+				D8D039DC13A2B7A80026D4D5 /* JSONKit.m */,
+				D8D039DD13A2B7A90026D4D5 /* Reachability.h */,
+				D8D039DE13A2B7A90026D4D5 /* Reachability.m */,
 				D8D039BC13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.h */,
 				D8D039BD13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.m */,
 				D8D039BF13A2A9E30026D4D5 /* RootViewController.h */,
@@ -175,6 +185,8 @@
 				D8D039BE13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.m in Sources */,
 				D8D039C113A2A9E30026D4D5 /* RootViewController.m in Sources */,
 				D8D039C513A2A9E30026D4D5 /* DetailViewController.m in Sources */,
+				D8D039DF13A2B7A90026D4D5 /* JSONKit.m in Sources */,
+				D8D039E013A2B7A90026D4D5 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
