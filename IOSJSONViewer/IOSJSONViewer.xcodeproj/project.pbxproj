@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8D039AE13A2A9E30026D4D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D039AD13A2A9E30026D4D5 /* UIKit.framework */; };
+		D8D039B013A2A9E30026D4D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D039AF13A2A9E30026D4D5 /* Foundation.framework */; };
+		D8D039B213A2A9E30026D4D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D039B113A2A9E30026D4D5 /* CoreGraphics.framework */; };
+		D8D039B813A2A9E30026D4D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D039B613A2A9E30026D4D5 /* InfoPlist.strings */; };
+		D8D039BA13A2A9E30026D4D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D039B913A2A9E30026D4D5 /* main.m */; };
+		D8D039BE13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D039BD13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.m */; };
+		D8D039C113A2A9E30026D4D5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D039C013A2A9E30026D4D5 /* RootViewController.m */; };
+		D8D039C313A2A9E30026D4D5 /* DetailViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = D8D039C213A2A9E30026D4D5 /* DetailViewController.h */; };
+		D8D039C513A2A9E30026D4D5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D039C413A2A9E30026D4D5 /* DetailViewController.m */; };
+		D8D039C813A2A9E40026D4D5 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D039C613A2A9E40026D4D5 /* RootViewController.xib */; };
+		D8D039CB13A2A9E40026D4D5 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D039C913A2A9E40026D4D5 /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8D039A913A2A9E30026D4D5 /* IOSJSONViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSJSONViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D039AD13A2A9E30026D4D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8D039AF13A2A9E30026D4D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8D039B113A2A9E30026D4D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8D039B513A2A9E30026D4D5 /* IOSJSONViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSJSONViewer-Info.plist"; sourceTree = "<group>"; };
+		D8D039B713A2A9E30026D4D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8D039B913A2A9E30026D4D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8D039BB13A2A9E30026D4D5 /* IOSJSONViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSJSONViewer-Prefix.pch"; sourceTree = "<group>"; };
+		D8D039BC13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSJSONViewerAppDelegate.h; sourceTree = "<group>"; };
+		D8D039BD13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSJSONViewerAppDelegate.m; sourceTree = "<group>"; };
+		D8D039BF13A2A9E30026D4D5 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D8D039C013A2A9E30026D4D5 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D8D039C213A2A9E30026D4D5 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D8D039C413A2A9E30026D4D5 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D8D039C713A2A9E40026D4D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		D8D039CA13A2A9E40026D4D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D039A613A2A9E30026D4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D039AE13A2A9E30026D4D5 /* UIKit.framework in Frameworks */,
+				D8D039B013A2A9E30026D4D5 /* Foundation.framework in Frameworks */,
+				D8D039B213A2A9E30026D4D5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8D0399E13A2A9E30026D4D5 = {
+			isa = PBXGroup;
+			children = (
+				D8D039B313A2A9E30026D4D5 /* IOSJSONViewer */,
+				D8D039AC13A2A9E30026D4D5 /* Frameworks */,
+				D8D039AA13A2A9E30026D4D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8D039AA13A2A9E30026D4D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D039A913A2A9E30026D4D5 /* IOSJSONViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8D039AC13A2A9E30026D4D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D039AD13A2A9E30026D4D5 /* UIKit.framework */,
+				D8D039AF13A2A9E30026D4D5 /* Foundation.framework */,
+				D8D039B113A2A9E30026D4D5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8D039B313A2A9E30026D4D5 /* IOSJSONViewer */ = {
+			isa = PBXGroup;
+			children = (
+				D8D039BC13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.h */,
+				D8D039BD13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.m */,
+				D8D039BF13A2A9E30026D4D5 /* RootViewController.h */,
+				D8D039C013A2A9E30026D4D5 /* RootViewController.m */,
+				D8D039C213A2A9E30026D4D5 /* DetailViewController.h */,
+				D8D039C413A2A9E30026D4D5 /* DetailViewController.m */,
+				D8D039C613A2A9E40026D4D5 /* RootViewController.xib */,
+				D8D039C913A2A9E40026D4D5 /* DetailViewController.xib */,
+				D8D039B413A2A9E30026D4D5 /* Supporting Files */,
+			);
+			path = IOSJSONViewer;
+			sourceTree = "<group>";
+		};
+		D8D039B413A2A9E30026D4D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D039B513A2A9E30026D4D5 /* IOSJSONViewer-Info.plist */,
+				D8D039B613A2A9E30026D4D5 /* InfoPlist.strings */,
+				D8D039B913A2A9E30026D4D5 /* main.m */,
+				D8D039BB13A2A9E30026D4D5 /* IOSJSONViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8D039A813A2A9E30026D4D5 /* IOSJSONViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D039CE13A2A9E40026D4D5 /* Build configuration list for PBXNativeTarget "IOSJSONViewer" */;
+			buildPhases = (
+				D8D039A513A2A9E30026D4D5 /* Sources */,
+				D8D039A613A2A9E30026D4D5 /* Frameworks */,
+				D8D039A713A2A9E30026D4D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSJSONViewer;
+			productName = IOSJSONViewer;
+			productReference = D8D039A913A2A9E30026D4D5 /* IOSJSONViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8D039A013A2A9E30026D4D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Coder Joes";
+			};
+			buildConfigurationList = D8D039A313A2A9E30026D4D5 /* Build configuration list for PBXProject "IOSJSONViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8D0399E13A2A9E30026D4D5;
+			productRefGroup = D8D039AA13A2A9E30026D4D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D039A813A2A9E30026D4D5 /* IOSJSONViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8D039A713A2A9E30026D4D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D039B813A2A9E30026D4D5 /* InfoPlist.strings in Resources */,
+				D8D039C313A2A9E30026D4D5 /* DetailViewController.h in Resources */,
+				D8D039C813A2A9E40026D4D5 /* RootViewController.xib in Resources */,
+				D8D039CB13A2A9E40026D4D5 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D039A513A2A9E30026D4D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D039BA13A2A9E30026D4D5 /* main.m in Sources */,
+				D8D039BE13A2A9E30026D4D5 /* IOSJSONViewerAppDelegate.m in Sources */,
+				D8D039C113A2A9E30026D4D5 /* RootViewController.m in Sources */,
+				D8D039C513A2A9E30026D4D5 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8D039B613A2A9E30026D4D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D039B713A2A9E30026D4D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8D039C613A2A9E40026D4D5 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D039C713A2A9E40026D4D5 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		D8D039C913A2A9E40026D4D5 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D039CA13A2A9E40026D4D5 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8D039CC13A2A9E40026D4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8D039CD13A2A9E40026D4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8D039CF13A2A9E40026D4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IOSJSONViewer/IOSJSONViewer-Prefix.pch";
+				INFOPLIST_FILE = "IOSJSONViewer/IOSJSONViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8D039D013A2A9E40026D4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IOSJSONViewer/IOSJSONViewer-Prefix.pch";
+				INFOPLIST_FILE = "IOSJSONViewer/IOSJSONViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D039A313A2A9E30026D4D5 /* Build configuration list for PBXProject "IOSJSONViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D039CC13A2A9E40026D4D5 /* Debug */,
+				D8D039CD13A2A9E40026D4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D039CE13A2A9E40026D4D5 /* Build configuration list for PBXNativeTarget "IOSJSONViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D039CF13A2A9E40026D4D5 /* Debug */,
+				D8D039D013A2A9E40026D4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8D039A013A2A9E30026D4D5 /* Project object */;
+}
