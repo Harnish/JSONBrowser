@@ -7,7 +7,8 @@
 //
 
 #import "IOSJSONViewerAppDelegate.h"
-#import "Reachability.h"
+#import "GetURLViewController.h"
+//#import "Reachability.h"
 @implementation IOSJSONViewerAppDelegate
 
 
@@ -21,7 +22,10 @@
     // Add the navigation controller's view to the window and display.
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    GetURLViewController * getURLViewController = [[GetURLViewController alloc] initWithNibName:@"GetURLViewController" bundle:nil];
+    [self.navigationController pushViewController:getURLViewController animated:YES];
     
+ /*   
     Reachability* reachability = [Reachability reachabilityWithHostName:@"www.advancedradteaching.com"];
 	NetworkStatus remoteHostStatus = [reachability currentReachabilityStatus];
 	
@@ -35,7 +39,7 @@
 	}
 	else if (remoteHostStatus == ReachableViaWWAN) { NSLog(@"reachable via wwan");}
 	else if (remoteHostStatus == ReachableViaWiFi) { NSLog(@"reachable via wifi");}
-	
+	*/
     return YES;
 }
 

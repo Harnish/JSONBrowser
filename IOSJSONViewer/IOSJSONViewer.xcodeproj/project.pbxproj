@@ -17,7 +17,10 @@
 		D8C8B96E13A2E7C3008A66F1 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B96D13A2E7C3008A66F1 /* RootViewController.m */; };
 		D8C8B97113A2E7C3008A66F1 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C8B96F13A2E7C3008A66F1 /* RootViewController.xib */; };
 		D8C8B97913A2E93A008A66F1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B97813A2E93A008A66F1 /* JSONKit.m */; };
-		D8C8B97C13A2E963008A66F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B97B13A2E963008A66F1 /* Reachability.m */; };
+		D8C8B98713A2EB8C008A66F1 /* GetURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B98513A2EB8C008A66F1 /* GetURLViewController.m */; };
+		D8C8B98813A2EB8C008A66F1 /* GetURLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C8B98613A2EB8C008A66F1 /* GetURLViewController.xib */; };
+		D8C8B99413A2EE0C008A66F1 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B99213A2EE0C008A66F1 /* MainTableViewController.m */; };
+		D8C8B99513A2EE0C008A66F1 /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C8B99313A2EE0C008A66F1 /* MainTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +40,12 @@
 		D8C8B97013A2E7C3008A66F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		D8C8B97713A2E93A008A66F1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		D8C8B97813A2E93A008A66F1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		D8C8B97A13A2E963008A66F1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		D8C8B97B13A2E963008A66F1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D8C8B98413A2EB8C008A66F1 /* GetURLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetURLViewController.h; sourceTree = "<group>"; };
+		D8C8B98513A2EB8C008A66F1 /* GetURLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetURLViewController.m; sourceTree = "<group>"; };
+		D8C8B98613A2EB8C008A66F1 /* GetURLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetURLViewController.xib; sourceTree = "<group>"; };
+		D8C8B99113A2EE0C008A66F1 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		D8C8B99213A2EE0C008A66F1 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		D8C8B99313A2EE0C008A66F1 /* MainTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +100,12 @@
 				D8C8B96D13A2E7C3008A66F1 /* RootViewController.m */,
 				D8C8B96F13A2E7C3008A66F1 /* RootViewController.xib */,
 				D8C8B95E13A2E7C2008A66F1 /* Supporting Files */,
+				D8C8B98413A2EB8C008A66F1 /* GetURLViewController.h */,
+				D8C8B98513A2EB8C008A66F1 /* GetURLViewController.m */,
+				D8C8B98613A2EB8C008A66F1 /* GetURLViewController.xib */,
+				D8C8B99113A2EE0C008A66F1 /* MainTableViewController.h */,
+				D8C8B99213A2EE0C008A66F1 /* MainTableViewController.m */,
+				D8C8B99313A2EE0C008A66F1 /* MainTableViewController.xib */,
 			);
 			path = IOSJSONViewer;
 			sourceTree = "<group>";
@@ -111,8 +124,6 @@
 		D8C8B97D13A2E96F008A66F1 /* ExternalLibs */ = {
 			isa = PBXGroup;
 			children = (
-				D8C8B97A13A2E963008A66F1 /* Reachability.h */,
-				D8C8B97B13A2E963008A66F1 /* Reachability.m */,
 				D8C8B97713A2E93A008A66F1 /* JSONKit.h */,
 				D8C8B97813A2E93A008A66F1 /* JSONKit.m */,
 			);
@@ -172,6 +183,8 @@
 				D8C8B96213A2E7C2008A66F1 /* InfoPlist.strings in Resources */,
 				D8C8B96B13A2E7C3008A66F1 /* MainWindow.xib in Resources */,
 				D8C8B97113A2E7C3008A66F1 /* RootViewController.xib in Resources */,
+				D8C8B98813A2EB8C008A66F1 /* GetURLViewController.xib in Resources */,
+				D8C8B99513A2EE0C008A66F1 /* MainTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +199,8 @@
 				D8C8B96813A2E7C2008A66F1 /* IOSJSONViewerAppDelegate.m in Sources */,
 				D8C8B96E13A2E7C3008A66F1 /* RootViewController.m in Sources */,
 				D8C8B97913A2E93A008A66F1 /* JSONKit.m in Sources */,
-				D8C8B97C13A2E963008A66F1 /* Reachability.m in Sources */,
+				D8C8B98713A2EB8C008A66F1 /* GetURLViewController.m in Sources */,
+				D8C8B99413A2EE0C008A66F1 /* MainTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
