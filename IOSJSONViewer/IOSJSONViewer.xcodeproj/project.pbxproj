@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8C8B95813A2E7C2008A66F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C8B95713A2E7C2008A66F1 /* UIKit.framework */; };
+		D8C8B95A13A2E7C2008A66F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C8B95913A2E7C2008A66F1 /* Foundation.framework */; };
+		D8C8B95C13A2E7C2008A66F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C8B95B13A2E7C2008A66F1 /* CoreGraphics.framework */; };
+		D8C8B96213A2E7C2008A66F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C8B96013A2E7C2008A66F1 /* InfoPlist.strings */; };
+		D8C8B96513A2E7C2008A66F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B96413A2E7C2008A66F1 /* main.m */; };
+		D8C8B96813A2E7C2008A66F1 /* IOSJSONViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B96713A2E7C2008A66F1 /* IOSJSONViewerAppDelegate.m */; };
+		D8C8B96B13A2E7C3008A66F1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C8B96913A2E7C3008A66F1 /* MainWindow.xib */; };
+		D8C8B96E13A2E7C3008A66F1 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B96D13A2E7C3008A66F1 /* RootViewController.m */; };
+		D8C8B97113A2E7C3008A66F1 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C8B96F13A2E7C3008A66F1 /* RootViewController.xib */; };
+		D8C8B97913A2E93A008A66F1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B97813A2E93A008A66F1 /* JSONKit.m */; };
+		D8C8B97C13A2E963008A66F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B97B13A2E963008A66F1 /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8C8B95313A2E7C2008A66F1 /* IOSJSONViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSJSONViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C8B95713A2E7C2008A66F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8C8B95913A2E7C2008A66F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8C8B95B13A2E7C2008A66F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8C8B95F13A2E7C2008A66F1 /* IOSJSONViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSJSONViewer-Info.plist"; sourceTree = "<group>"; };
+		D8C8B96113A2E7C2008A66F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8C8B96313A2E7C2008A66F1 /* IOSJSONViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOSJSONViewer-Prefix.pch"; sourceTree = "<group>"; };
+		D8C8B96413A2E7C2008A66F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8C8B96613A2E7C2008A66F1 /* IOSJSONViewerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSJSONViewerAppDelegate.h; sourceTree = "<group>"; };
+		D8C8B96713A2E7C2008A66F1 /* IOSJSONViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSJSONViewerAppDelegate.m; sourceTree = "<group>"; };
+		D8C8B96A13A2E7C3008A66F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		D8C8B96C13A2E7C3008A66F1 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D8C8B96D13A2E7C3008A66F1 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D8C8B97013A2E7C3008A66F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		D8C8B97713A2E93A008A66F1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		D8C8B97813A2E93A008A66F1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		D8C8B97A13A2E963008A66F1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D8C8B97B13A2E963008A66F1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C8B95013A2E7C2008A66F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C8B95813A2E7C2008A66F1 /* UIKit.framework in Frameworks */,
+				D8C8B95A13A2E7C2008A66F1 /* Foundation.framework in Frameworks */,
+				D8C8B95C13A2E7C2008A66F1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8C8B94813A2E7C1008A66F1 = {
+			isa = PBXGroup;
+			children = (
+				D8C8B95D13A2E7C2008A66F1 /* IOSJSONViewer */,
+				D8C8B95613A2E7C2008A66F1 /* Frameworks */,
+				D8C8B95413A2E7C2008A66F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C8B95413A2E7C2008A66F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8B95313A2E7C2008A66F1 /* IOSJSONViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C8B95613A2E7C2008A66F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8B95713A2E7C2008A66F1 /* UIKit.framework */,
+				D8C8B95913A2E7C2008A66F1 /* Foundation.framework */,
+				D8C8B95B13A2E7C2008A66F1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8C8B95D13A2E7C2008A66F1 /* IOSJSONViewer */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8B97D13A2E96F008A66F1 /* ExternalLibs */,
+				D8C8B96613A2E7C2008A66F1 /* IOSJSONViewerAppDelegate.h */,
+				D8C8B96713A2E7C2008A66F1 /* IOSJSONViewerAppDelegate.m */,
+				D8C8B96913A2E7C3008A66F1 /* MainWindow.xib */,
+				D8C8B96C13A2E7C3008A66F1 /* RootViewController.h */,
+				D8C8B96D13A2E7C3008A66F1 /* RootViewController.m */,
+				D8C8B96F13A2E7C3008A66F1 /* RootViewController.xib */,
+				D8C8B95E13A2E7C2008A66F1 /* Supporting Files */,
+			);
+			path = IOSJSONViewer;
+			sourceTree = "<group>";
+		};
+		D8C8B95E13A2E7C2008A66F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8B95F13A2E7C2008A66F1 /* IOSJSONViewer-Info.plist */,
+				D8C8B96013A2E7C2008A66F1 /* InfoPlist.strings */,
+				D8C8B96313A2E7C2008A66F1 /* IOSJSONViewer-Prefix.pch */,
+				D8C8B96413A2E7C2008A66F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8C8B97D13A2E96F008A66F1 /* ExternalLibs */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8B97A13A2E963008A66F1 /* Reachability.h */,
+				D8C8B97B13A2E963008A66F1 /* Reachability.m */,
+				D8C8B97713A2E93A008A66F1 /* JSONKit.h */,
+				D8C8B97813A2E93A008A66F1 /* JSONKit.m */,
+			);
+			name = ExternalLibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8C8B95213A2E7C2008A66F1 /* IOSJSONViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C8B97413A2E7C3008A66F1 /* Build configuration list for PBXNativeTarget "IOSJSONViewer" */;
+			buildPhases = (
+				D8C8B94F13A2E7C2008A66F1 /* Sources */,
+				D8C8B95013A2E7C2008A66F1 /* Frameworks */,
+				D8C8B95113A2E7C2008A66F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSJSONViewer;
+			productName = IOSJSONViewer;
+			productReference = D8C8B95313A2E7C2008A66F1 /* IOSJSONViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C8B94A13A2E7C2008A66F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Coder Joes";
+			};
+			buildConfigurationList = D8C8B94D13A2E7C2008A66F1 /* Build configuration list for PBXProject "IOSJSONViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8C8B94813A2E7C1008A66F1;
+			productRefGroup = D8C8B95413A2E7C2008A66F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C8B95213A2E7C2008A66F1 /* IOSJSONViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8C8B95113A2E7C2008A66F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C8B96213A2E7C2008A66F1 /* InfoPlist.strings in Resources */,
+				D8C8B96B13A2E7C3008A66F1 /* MainWindow.xib in Resources */,
+				D8C8B97113A2E7C3008A66F1 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C8B94F13A2E7C2008A66F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C8B96513A2E7C2008A66F1 /* main.m in Sources */,
+				D8C8B96813A2E7C2008A66F1 /* IOSJSONViewerAppDelegate.m in Sources */,
+				D8C8B96E13A2E7C3008A66F1 /* RootViewController.m in Sources */,
+				D8C8B97913A2E93A008A66F1 /* JSONKit.m in Sources */,
+				D8C8B97C13A2E963008A66F1 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8C8B96013A2E7C2008A66F1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C8B96113A2E7C2008A66F1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8C8B96913A2E7C3008A66F1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C8B96A13A2E7C3008A66F1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		D8C8B96F13A2E7C3008A66F1 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C8B97013A2E7C3008A66F1 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8C8B97213A2E7C3008A66F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8C8B97313A2E7C3008A66F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		D8C8B97513A2E7C3008A66F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IOSJSONViewer/IOSJSONViewer-Prefix.pch";
+				INFOPLIST_FILE = "IOSJSONViewer/IOSJSONViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8C8B97613A2E7C3008A66F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IOSJSONViewer/IOSJSONViewer-Prefix.pch";
+				INFOPLIST_FILE = "IOSJSONViewer/IOSJSONViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C8B94D13A2E7C2008A66F1 /* Build configuration list for PBXProject "IOSJSONViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C8B97213A2E7C3008A66F1 /* Debug */,
+				D8C8B97313A2E7C3008A66F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C8B97413A2E7C3008A66F1 /* Build configuration list for PBXNativeTarget "IOSJSONViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C8B97513A2E7C3008A66F1 /* Debug */,
+				D8C8B97613A2E7C3008A66F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8C8B94A13A2E7C2008A66F1 /* Project object */;
+}
