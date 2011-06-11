@@ -107,9 +107,18 @@
          cell.textLabel.text = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
         
         cell.detailTextLabel.text = [MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]];
-    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    } else if ([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSNumber class]]){
+        cell.textLabel.text = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
+        
+        cell.detailTextLabel.text = [[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] stringValue];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    } else if ([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSDictionary class]]){ 
         cell.textLabel.text = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    } else {
+        cell.textLabel.text = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
+        cell.accessoryType = UITableViewCellAccessoryNone;
     }
     // Configure the cell...
     return cell;
@@ -159,10 +168,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-     if([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSString class]]){
-
-        
-    } else {
+     if([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSDictionary class]]){
+     
         MainTableViewController * mainTableViewController = [[MainTableViewController alloc]initWithNibName:@"MainTableViewController" bundle:nil];
         mainTableViewController.MyJSONdictionary = [MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]];
         [self.navigationController pushViewController:mainTableViewController animated:YES];
