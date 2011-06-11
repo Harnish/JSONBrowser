@@ -91,7 +91,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    //NSLog(@"my key count is %i", [[MyJSONdictionary allKeys] count]);
     return [[MyJSONdictionary allKeys]count];
 }
 
@@ -101,17 +100,16 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    NSLog(@" foo - %i", indexPath.row);
-    cell.textLabel.text = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+    }    
 
-    
     if([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSString class]]){
-        NSString * CellLabel = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
-        CellLabel = [CellLabel stringByAppendingString:[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]]];
-        cell.textLabel.text = CellLabel;
+         cell.textLabel.text = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
         
+        cell.detailTextLabel.text = [MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]];
+    } else {
+        cell.textLabel.text = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     // Configure the cell...
     return cell;
@@ -161,14 +159,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
-    if([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSString class]]){
+     if([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSString class]]){
 
         
     } else {
