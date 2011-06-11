@@ -37,10 +37,8 @@
 -(IBAction) GetURL 
 {
     MainTableViewController * mainTableViewController = [[MainTableViewController alloc] initWithNibName:@"MainTableViewController" bundle:nil];
-    NSLog(@"Getting URL");
     NSURL *siteurl = [NSURL URLWithString:[URLstring text]];
     NSString *jsonreturn = [[NSString alloc] initWithContentsOfURL:siteurl];
-    NSLog(@"Turning JSON into a Dictionary");
     mainTableViewController.MyJSONdictionary = [jsonreturn objectFromJSONString];
     
     [self.navigationController pushViewController:mainTableViewController animated:YES];
