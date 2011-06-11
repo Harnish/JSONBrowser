@@ -7,10 +7,11 @@
 //
 
 #import "MainTableViewController.h"
-
+#import "JSONKit.h"
 
 @implementation MainTableViewController
-@synthesize MyURL;
+@synthesize MyJSONdictionary;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -44,11 +45,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    NSURL *siteurl = [NSURL URLWithString:MyURL];
-	NSString *sitereturn = [[NSString alloc] initWithContentsOfURL:siteurl];
-    
-	
 }
 
 - (void)viewDidUnload
@@ -88,16 +84,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    //NSLog(@"my key count is %i", [[MyJSONdictionary allKeys] count]);
+    return [[MyJSONdictionary allKeys]count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -108,9 +103,17 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
+    NSLog(@" foo - %i", indexPath.row);
+    cell.textLabel.text = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
+
     
+    if([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSString class]]){
+        NSString * CellLabel = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
+        CellLabel = [CellLabel stringByAppendingString:[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]]];
+        cell.textLabel.text = CellLabel;
+        
+    }
     // Configure the cell...
-    
     return cell;
 }
 
@@ -165,6 +168,15 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    if([[MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]] isKindOfClass:[NSString class]]){
+
+        
+    } else {
+        MainTableViewController * mainTableViewController = [[MainTableViewController alloc]initWithNibName:@"MainTableViewController" bundle:nil];
+        mainTableViewController.MyJSONdictionary = [MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]];
+        [self.navigationController pushViewController:mainTableViewController animated:YES];
+        [mainTableViewController release];
+    }
 }
 
 @end

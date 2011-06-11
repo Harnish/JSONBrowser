@@ -10,7 +10,7 @@
 
 
 @interface MainTableViewController : UITableViewController {
-    NSString * MyURL;
+    NSDictionary * MyJSONdictionary;
 }
-@property (retain, nonatomic) NSString * MyURL;
+@property (retain, nonatomic) NSDictionary * MyJSONdictionary;
 @end

@@ -37,7 +37,12 @@
 -(IBAction) GetURL 
 {
     MainTableViewController * mainTableViewController = [[MainTableViewController alloc] initWithNibName:@"MainTableViewController" bundle:nil];
-    mainTableViewController.MyURL = [URLstring text];
+    NSLog(@"Getting URL");
+    NSURL *siteurl = [NSURL URLWithString:[URLstring text]];
+    NSString *jsonreturn = [[NSString alloc] initWithContentsOfURL:siteurl];
+    NSLog(@"Turning JSON into a Dictionary");
+    mainTableViewController.MyJSONdictionary = [jsonreturn objectFromJSONString];
+    
     [self.navigationController pushViewController:mainTableViewController animated:YES];
     
 }
@@ -53,6 +58,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
