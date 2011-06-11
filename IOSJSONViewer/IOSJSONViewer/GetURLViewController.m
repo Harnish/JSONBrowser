@@ -7,9 +7,10 @@
 //
 
 #import "GetURLViewController.h"
-
+#import "MainTableViewController.h"
 
 @implementation GetURLViewController
+@synthesize URLstring;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,7 +36,9 @@
 
 -(IBAction) GetURL 
 {
-    
+    MainTableViewController * mainTableViewController = [[MainTableViewController alloc] initWithNibName:@"MainTableViewController" bundle:nil];
+    mainTableViewController.MyURL = [URLstring text];
+    [self.navigationController pushViewController:mainTableViewController animated:YES];
     
 }
 

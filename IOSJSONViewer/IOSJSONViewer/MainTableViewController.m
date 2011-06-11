@@ -10,7 +10,7 @@
 
 
 @implementation MainTableViewController
-
+@synthesize MyURL;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -44,6 +44,11 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSURL *siteurl = [NSURL URLWithString:MyURL];
+	NSString *sitereturn = [[NSString alloc] initWithContentsOfURL:siteurl];
+    
+	
 }
 
 - (void)viewDidUnload
