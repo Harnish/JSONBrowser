@@ -172,6 +172,7 @@
      
         MainTableViewController * mainTableViewController = [[MainTableViewController alloc]initWithNibName:@"MainTableViewController" bundle:nil];
         mainTableViewController.MyJSONdictionary = [MyJSONdictionary objectForKey:[[MyJSONdictionary allKeys] objectAtIndex:indexPath.row]];
+         mainTableViewController.title = [[MyJSONdictionary allKeys] objectAtIndex:indexPath.row];
         [self.navigationController pushViewController:mainTableViewController animated:YES];
         [mainTableViewController release];
     }
