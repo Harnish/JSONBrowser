@@ -11,8 +11,11 @@
 @interface OSXJSONViewerAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
+    NSViewController * viewController;
+    NSTextField * MyURL;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (retain) IBOutlet NSTextField *MyURL;
+@property (retain) NSViewController *viewController;
 @end

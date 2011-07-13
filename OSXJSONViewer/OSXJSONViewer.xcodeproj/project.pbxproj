@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D6F92F613CD38ED00046512 /* URLWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6F92F513CD38ED00046512 /* URLWindow.xib */; };
+		1D6F92FA13CD3EA700046512 /* JSONGrab.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F92F913CD3EA700046512 /* JSONGrab.m */; };
 		D8C8B9A613A307A3008A66F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C8B9A513A307A3008A66F1 /* Cocoa.framework */; };
 		D8C8B9B013A307A4008A66F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C8B9AE13A307A4008A66F1 /* InfoPlist.strings */; };
 		D8C8B9B313A307A4008A66F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8B9B213A307A4008A66F1 /* main.m */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D6F92F513CD38ED00046512 /* URLWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLWindow.xib; sourceTree = "<group>"; };
+		1D6F92F813CD3EA700046512 /* JSONGrab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONGrab.h; sourceTree = "<group>"; };
+		1D6F92F913CD3EA700046512 /* JSONGrab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONGrab.m; sourceTree = "<group>"; };
 		D8C8B9A113A307A3008A66F1 /* OSXJSONViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXJSONViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C8B9A513A307A3008A66F1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D8C8B9A813A307A3008A66F1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -90,6 +95,9 @@
 				D8C8B9B813A307A4008A66F1 /* OSXJSONViewerAppDelegate.m */,
 				D8C8B9BA13A307A4008A66F1 /* MainMenu.xib */,
 				D8C8B9AC13A307A4008A66F1 /* Supporting Files */,
+				1D6F92F513CD38ED00046512 /* URLWindow.xib */,
+				1D6F92F813CD3EA700046512 /* JSONGrab.h */,
+				1D6F92F913CD3EA700046512 /* JSONGrab.m */,
 			);
 			path = OSXJSONViewer;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 				D8C8B9B013A307A4008A66F1 /* InfoPlist.strings in Resources */,
 				D8C8B9B613A307A4008A66F1 /* Credits.rtf in Resources */,
 				D8C8B9BC13A307A4008A66F1 /* MainMenu.xib in Resources */,
+				1D6F92F613CD38ED00046512 /* URLWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +190,7 @@
 				D8C8B9B313A307A4008A66F1 /* main.m in Sources */,
 				D8C8B9B913A307A4008A66F1 /* OSXJSONViewerAppDelegate.m in Sources */,
 				D8C8B9C413A307D3008A66F1 /* JSONKit.m in Sources */,
+				1D6F92FA13CD3EA700046512 /* JSONGrab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +305,7 @@
 				D8C8B9C113A307A4008A66F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
