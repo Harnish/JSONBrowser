@@ -45,6 +45,23 @@
     
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+	// When the user presses return, take focus away from the text field so that the keyboard is dismissed.
+	if (theTextField == URLstring) {
+		[URLstring resignFirstResponder];
+	}
+	return YES;
+}
+
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // Dismiss the keyboard when the view outside the text field is touched.
+    [URLstring resignFirstResponder];
+    // Revert the text field to the previous value.
+    [super touchesBegan:touches withEvent:event];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
