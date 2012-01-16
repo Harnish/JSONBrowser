@@ -4,5 +4,4 @@ I also use it for testing my JSON applications to see what they are producing.
 
 Feel free to commit tweaks.
 
-
-"!http://api.coderwall.com/harnish/endorsecount.png!":http://coderwall/harnish
+[![endorse](http://api.coderwall.com/harnish/endorsecount.png)](http://coderwall.com/harnish) 
